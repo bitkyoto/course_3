@@ -35,13 +35,13 @@ void MainWindow::regen()
 }
 void MainWindow::mousePressEvent(QMouseEvent *e)
 {
-    user.move_book(e,scene);
+    user.move_book(e,scene,ev);
     repaint();
 }
 
 void MainWindow::mouseDoubleClickEvent(QMouseEvent *e)
 {
-    user.add_book_to_bookcase(e,scene);
+    user.add_book_to_bookcase(e,scene,ev);
     repaint();
 }
 void MainWindow::paintEvent(QPaintEvent *event){

@@ -53,3 +53,7 @@ Book::Book(const Book & other)
     this->color = other.color;
     this->pos = other.pos;
 }
+bool operator==(const Book& lhs, const Book& rhs)
+{
+    return lhs.getId()==rhs.getId();
+}

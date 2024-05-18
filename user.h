@@ -5,14 +5,14 @@
 #include <scene.h>
 #include "QMouseEvent"
 #include <iostream>
-
+#include <eventhandler.h>
 class User
 {
 public:
     User();
-    void add_book_to_bookcase(QMouseEvent *e, Scene &scene);
-    void move_book(QMouseEvent* e, Scene& scene);
-    void read_book(QMouseEvent* e, Scene& scene);
+    void add_book_to_bookcase(QMouseEvent *e, Scene& scene, EventHandler* ev);
+    void move_book(QMouseEvent* e, Scene &scene, EventHandler* ev);
+    void read_book(QMouseEvent* e, Scene &scene, EventHandler* ev);
 };
 
 #endif // USER_H

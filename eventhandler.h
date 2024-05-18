@@ -6,14 +6,16 @@
 #include <QMouseEvent>
 #include <qpushbutton.h>
 #include <random>
-class EventHandler:public QWidget
+class EventHandler: public QWidget
 {
-    Q_OBJECT
 public:
     EventHandler(QWidget* parent);
     QPushButton* gen;
     Scene* scene;
     void regenerate();
+    void add_book_to_bookcase_handler(QMouseEvent *e, Scene &scene);
+    void move_book_handler(QMouseEvent* e, Scene& scene);
+    void read_book_handler(QMouseEvent* e, Scene& scene);
 };
 
 #endif // EventHandlerInterface_H

@@ -22,8 +22,7 @@ private:
     int id;
 public:
     QColor color;
-
-
 };
+bool operator==(const Book& lhs, const Book& rhs);
 
 #endif // BOOK_H
